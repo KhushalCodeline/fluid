@@ -519,6 +519,10 @@ a.btn_main.btn_border:hover:after {
   color: var(--black);
 }
 
+.product_block:hover .product_content h5 {
+  font-weight: normal;
+}
+
 .start ul {
   display: flex;
   flex-wrap: wrap;
@@ -726,6 +730,7 @@ footer.bg_blue_light {
 .footer_block li a {
   color: #eff5f7;
   text-decoration: none;
+  display: block;
 }
 .footer_block h5 {
   color: #ffffff;
@@ -758,6 +763,9 @@ footer.bg_blue_light {
   text-align: center;
   border-radius: 100%;
   margin-right: 10px;
+}
+.footer_block.social_media li:hover {
+  background-color: #8DB9CA;
 }
 .footer_block.social_media ul {
   display: flex;

@@ -529,6 +529,15 @@ a.btn_main.btn_border {
 		min-height: 40px;
 	}
 }
+.product_block {
+	&:hover {
+		.product_content {
+			h5 {
+				font-weight: normal;
+			}
+		}
+	}
+}
 .start {
 	ul {
 		display: flex;
@@ -729,7 +738,9 @@ footer.bg_blue_light {
 		a {
 			color: $color_9;
 			text-decoration: none;
+			display: block;
 		}
+		
 	}
 	h5 {
 		color: $color_5;
@@ -766,6 +777,9 @@ footer.bg_blue_light {
 		text-align: center;
 		border-radius: 100%;
 		margin-right: 10px;
+		&:hover {
+			background-color: #8DB9CA;
+		}
 	}
 	ul {
 		display: flex;
@@ -857,6 +871,10 @@ footer.bg_blue_light {
 			margin-bottom: 4px;
 		}
 	}
+	
+	
+
+
 	section.parallax_img_section.bg_grey {
 		position: relative;
 		height: 530px;
