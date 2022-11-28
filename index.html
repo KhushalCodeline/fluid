@@ -1,672 +1,795 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Floid</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+		<!-- Favicon icon -->
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+		<link rel="icon" type="image/x-icon" href="img/favicon.png" />
 
-    <!-- Bootstrap css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- Slick css -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+		<!-- Bootstrap css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- aos css -->
-    <link href="css/aos.css" rel="stylesheet">
+		<!-- Slick css -->
+		<link rel="stylesheet" type="text/css" href="css/slick.css" />
 
-    <!-- Gotham fonts -->
-    <link rel="stylesheet" type="text/css" href="fonts/gothan.css" />
+		<!-- aos css -->
+		<link href="css/aos.css" rel="stylesheet" />
 
-    <!-- Custom css -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
-</head>
+		<!-- Gotham fonts -->
+		<link rel="stylesheet" type="text/css" href="fonts/gothan.css" />
 
-<body>
-    <!-- Header -->
+		<!-- Custom css -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	</head>
 
-    <header>
-        <div class="top_header bg_blue_light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="">
-                            <p>FREE SHIPPING ON ALL U.S. ORDERS $49+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="my-1 mx-2 close">X</span>
-									<span class="navbar-toggler-icon"></span>
-								</button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <div class="left-menu me-lg-auto mb-lg-0">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#explore">SHOP</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#our_story">OUR STORY</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+	<body>
+		<!-- Header -->
 
-                                    <a class="navbar-brand" href="index.html"><img src="img/logo-fluid_black.svg" alt="" /></a>
+		<header>
+			<div class="top_header bg_blue_light text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="">
+								<p>FREE SHIPPING ON ALL U.S. ORDERS $49+</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<nav class="navbar navbar-expand-lg">
+								<div class="container-fluid">
+									<button
+										class="navbar-toggler"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#navbarSupportedContent"
+										aria-controls="navbarSupportedContent"
+										aria-expanded="false"
+										aria-label="Toggle navigation"
+									>
+										<span class="my-1 mx-2 close">X</span>
+										<span class="navbar-toggler-icon"></span>
+									</button>
+									<div
+										class="collapse navbar-collapse"
+										id="navbarSupportedContent"
+									>
+										<div class="left-menu me-lg-auto mb-lg-0">
+											<ul class="navbar-nav">
+												<li class="nav-item">
+													<a class="nav-link" href="#explore">SHOP</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#our_story">OUR STORY</a>
+												</li>
+											</ul>
+										</div>
 
-                                    <div class="right-menu ms-lg-auto mb-lg-0">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#brew_guides">BREW GUIDES</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" target="_blank" href="">BLOG</a>
-                                            </li>
-                                        </ul>
-                                        <div class="account-intro">
-                                            <ul>
-                                                <li class="search">
-                                                    <img src="img/search-line.svg" alt="" />
-                                                </li>
-                                                <li class="search">
-                                                    <img src="img/My_Account_icon.svg" alt="" />
-                                                </li>
-                                                <li class="shopping-bg">
-                                                    <img src="img/Shopping_bag_icon.svg" alt="" />
-                                                    <span>0</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+										<a class="navbar-brand" href="index.html"
+											><img src="img/logo-fluid_black.svg" alt=""
+										/></a>
 
-    <!-- End Header -->
+										<div class="right-menu ms-lg-auto mb-lg-0">
+											<ul class="navbar-nav">
+												<li class="nav-item">
+													<a class="nav-link" href="#brew_guides"
+														>BREW GUIDES</a
+													>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" target="_blank" href="">BLOG</a>
+												</li>
+											</ul>
+											<div class="account-intro">
+												<ul>
+													<li class="search">
+														<img src="img/search-line.svg" alt="" />
+													</li>
+													<li class="search">
+														<img src="img/My_Account_icon.svg" alt="" />
+													</li>
+													<li class="shopping-bg">
+														<img src="img/Shopping_bag_icon.svg" alt="" />
+														<span>0</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <!-- Banner -->
+		<!-- End Header -->
 
-    <section class="banner_section py-0">
-        <div class="banner_grp">
-            <img class="img-fluid w-100" src="img/banner.png" alt="" />
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="banner_box bg_blue_dark">
-                            <h1>THINK <br />LIKE AN ENGINEER</h1>
-                            <p>Build a toy each month a longside Mark Rober!</p>
-                            <div class="btn_grp">
-                                <a href="#" class="btn_main bg_red">GET STARTED</a>
-                                <a href="#" class="btn_main btn_border"> GIFT IT</a>
-                            </div>
-                        </div>
-                        <div class="explore">
-                            <a href="#explore">EXPLORE <img src="img/arrow-right-short.svg" alt="arrow" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- Banner -->
 
-    </section>
+		<section class="banner_section py-0">
+			<div class="banner_grp">
+				<img class="img-fluid w-100" src="img/banner.png" alt="" />
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="banner_box bg_blue_dark">
+								<h1>THINK <br />LIKE AN ENGINEER</h1>
+								<p>Build a toy each month a longside Mark Rober!</p>
+								<div class="btn_grp">
+									<a href="#" class="btn_main bg_red">GET STARTED</a>
+									<a href="#" class="btn_main btn_border"> GIFT IT</a>
+								</div>
+							</div>
+							<div class="explore">
+								<a href="#explore"
+									>EXPLORE <img src="img/arrow-right-short.svg" alt="arrow"
+								/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- End Banner -->
+		<!-- End Banner -->
 
-    <!-- Product Slider -->
+		<!-- Product Slider -->
 
-    <section id="explore" class="product_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title_section text-center mb-50" data-aos="fade-up">
-                        <h6>POUR YOUR BEST CUP WITH</h6>
-                        <h2>OUR BEST SELLERS</h2>
-                    </div>
-                    <div class="product_slider">
-                        <div>
-                            <div class="product_block">
-                                <a href="#" class="product_img d-inline-block">
-                                    <img class="img-block w-100" src="img/product-1.png" alt="" />
-                                </a>
-                                <div class="product_content">
-                                    <div class="start">
-                                        <ul>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5><a href="#" class="d-block">COFFEE FRENCH PRESS P7</a></h5>
-                                    <div class="price">
-                                        $109.95 - $139.95
-                                    </div>
-                                    <div class="product_color">
-                                        <ul>
-                                            <li>
-                                                <span style="background-color: #000000;" class="active"></span>
-                                            </li>
+		<section id="explore" class="product_section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="title_section text-center mb-50" data-aos="fade-up">
+							<h6>POUR YOUR BEST CUP WITH</h6>
+							<h2>OUR BEST SELLERS</h2>
+						</div>
+						<div class="product_slider">
+							<div>
+								<div class="product_block">
+									<a href="#" class="product_img d-inline-block">
+										<img
+											class="img-block w-100"
+											src="img/product-1.png"
+											alt=""
+										/>
+									</a>
+									<div class="product_content">
+										<div class="start">
+											<ul>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+											</ul>
+										</div>
+										<h5>
+											<a href="#" class="d-block">COFFEE FRENCH PRESS P7</a>
+										</h5>
+										<div class="price">$109.95 - $139.95</div>
+										<div class="product_color">
+											<ul>
+												<li>
+													<span
+														style="background-color: #000000"
+														class="active"
+													></span>
+												</li>
 
-                                            <li>
-                                                <span style="background-color: #ffffff;border: 1px solid #DEDEDE;" class=""></span>
-                                            </li>
+												<li>
+													<span
+														style="
+															background-color: #ffffff;
+															border: 1px solid #dedede;
+														"
+														class=""
+													></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 
+							<div>
+								<div class="product_block">
+									<a href="#" class="product_img d-inline-block">
+										<img
+											class="img-block w-100"
+											src="img/product-2.png"
+											alt=""
+										/>
+										<span class="sale bg_red">sale</span>
+									</a>
+									<div class="product_content">
+										<div class="start">
+											<ul>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+											</ul>
+										</div>
+										<h5>
+											<a href="#" class="d-block">COFFEE FRENCH PRESS P6</a>
+										</h5>
+										<div class="price">$89.95<span>$99.95</span></div>
+										<div class="product_color">
+											<ul>
+												<li>
+													<span
+														style="background-color: #000000"
+														class="active"
+													></span>
+												</li>
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+												<li>
+													<span
+														style="
+															background-color: #ffffff;
+															border: 1px solid #dedede;
+														"
+														class=""
+													></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                        <div>
-                            <div class="product_block">
-                                <a href="#" class="product_img d-inline-block">
-                                    <img class="img-block w-100" src="img/product-2.png" alt="" />
-                                    <span class="sale bg_red">sale</span>
-                                </a>
-                                <div class="product_content">
-                                    <div class="start">
-                                        <ul>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5><a href="#" class="d-block">COFFEE FRENCH PRESS P6</a></h5>
-                                    <div class="price">
-                                        $89.95<span>$99.95</span>
-                                    </div>
-                                    <div class="product_color">
-                                        <ul>
-                                            <li>
-                                                <span style="background-color: #000000;" class="active"></span>
-                                            </li>
+							<div>
+								<div class="product_block">
+									<a href="#" class="product_img d-inline-block">
+										<img
+											class="img-block w-100"
+											src="img/product-3.png"
+											alt=""
+										/>
+										<span class="new bg_green">new!</span>
+									</a>
+									<div class="product_content">
+										<div class="start">
+											<ul>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+											</ul>
+										</div>
+										<h5>
+											<a href="#" class="d-block"
+												>BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ</a
+											>
+										</h5>
+										<div class="price">$99.95</div>
+										<div class="product_color">
+											<ul>
+												<li>
+													<span
+														style="
+															background-color: #ffffff;
+															border: 1px solid #dedede;
+														"
+														class=""
+													></span>
+												</li>
+												<li>
+													<span
+														style="
+															background-color: #000000;
+															border: 1px solid #dedede;
+														"
+														class=""
+													></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                                            <li>
-                                                <span style="background-color: #ffffff;border: 1px solid #DEDEDE;" class=""></span>
-                                            </li>
+							<div>
+								<div class="product_block">
+									<a href="#" class="product_img d-inline-block">
+										<img
+											class="img-block w-100"
+											src="img/product-4.png"
+											alt=""
+										/>
+										<span class="backstock bg_blue_light">BACK IN STOCK</span>
+									</a>
+									<div class="product_content">
+										<div class="start">
+											<ul>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+											</ul>
+										</div>
+										<h5>
+											<a href="#" class="d-block">ULTRALIGHT COFFEE PRESS P0</a>
+										</h5>
+										<div class="price">$109.95</div>
+										<div class="product_color">
+											<ul>
+												<li>
+													<span
+														style="background-color: #ffffff"
+														class="active"
+													></span>
+												</li>
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+												<li>
+													<span style="background-color: #000000"></span>
+												</li>
+												<li>
+													<span style="background-color: #285c4d"></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                        <div>
-                            <div class="product_block">
-                                <a href="#" class="product_img d-inline-block">
-                                    <img class="img-block w-100" src="img/product-3.png" alt="" />
-                                    <span class="new bg_green">new!</span>
-                                </a>
-                                <div class="product_content">
-                                    <div class="start">
-                                        <ul>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5><a href="#" class="d-block">BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ</a></h5>
-                                    <div class="price">
-                                        $99.95
-                                    </div>
-                                    <div class="product_color">
-                                        <ul>
+							<div>
+								<div class="product_block">
+									<a href="#" class="product_img d-inline-block">
+										<img
+											class="img-block w-100"
+											src="img/product-1.png"
+											alt=""
+										/>
+									</a>
+									<div class="product_content">
+										<div class="start">
+											<ul>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+											</ul>
+										</div>
+										<h5>
+											<a href="#" class="d-block">ULTRALIGHT COFFEE PRESS P0</a>
+										</h5>
+										<div class="price">$44.95</div>
+										<div class="product_color">
+											<ul>
+												<li>
+													<span
+														style="
+															background-color: #ffffff;
+															border: 1px solid #dedede;
+														"
+														class=""
+													></span>
+												</li>
 
-                                            <li>
-                                                <span style="background-color: #ffffff;border: 1px solid #DEDEDE;" class=""></span>
-                                            </li>
-                                            <li>
-                                                <span style="background-color: #000000;border: 1px solid #DEDEDE;" class=""></span>
-                                            </li>
+												<li>
+													<span style="background-color: #ffffff"></span>
+												</li>
+												<li>
+													<span style="background-color: #000000"></span>
+												</li>
+												<li>
+													<span style="background-color: #285c4d"></span>
+												</li>
+												<li>
+													<span style="background-color: #02205c"></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+							<div>
+								<div class="product_block">
+									<a href="#" class="product_img d-inline-block">
+										<img
+											class="img-block w-100"
+											src="img/product-2.png"
+											alt=""
+										/>
+									</a>
+									<div class="product_content">
+										<div class="start">
+											<ul>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+												<li>
+													<img src="img/start.svg" alt="" />
+												</li>
+											</ul>
+										</div>
+										<h5>
+											<a href="#" class="d-block">COFFEE FRENCH PRESS P7</a>
+										</h5>
+										<div class="price">
+											$109.95 - $139.95 <span>$99.95</span>
+										</div>
+										<div class="product_color">
+											<ul>
+												<li>
+													<div class="bg_black"></div>
+												</li>
+												<li>
+													<div class="bg_black"></div>
+												</li>
+												<li>
+													<div class="bg_black"></div>
+												</li>
+												<li>
+													<div class="bg_black"></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        <div>
-                            <div class="product_block">
-                                <a href="#" class="product_img d-inline-block">
-                                    <img class="img-block w-100" src="img/product-4.png" alt="" />
-                                    <span class="backstock bg_blue_light">BACK IN STOCK</span>
-                                </a>
-                                <div class="product_content">
-                                    <div class="start">
-                                        <ul>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5><a href="#" class="d-block">ULTRALIGHT COFFEE PRESS P0</a></h5>
-                                    <div class="price">
-                                        $109.95
-                                    </div>
-                                    <div class="product_color">
-                                        <ul>
-                                            <li>
-                                                <span style="background-color: #ffffff;" class="active"></span>
-                                            </li>
+		<!-- End Product Slider -->
 
+		<!-- Parallx Images -->
 
-                                            <li>
-                                                <span style="background-color: #000000;"></span>
-                                            </li>
-                                            <li>
-                                                <span style="background-color: #285C4D;"></span>
-                                            </li>
+		<section id="our_story" class="parallax_img_section bg_grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="title_section text-center mb-50" data-aos="fade-up">
+							<h6>POUR YOUR BEST CUP WITH</h6>
+							<h2>OUR BEST SELLERS</h2>
+							<p>
+								We understand coffee is a big part of your busy, active life.
+								That’s why we create and develop products that allow you to
+								bring your passion for
+								<strong>coffee-when you want it-</strong> and wherever life
+								takes you.
+							</p>
+						</div>
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						<div class="parallx_img_grp">
+							<div class="parallx_img_part parallx_img_1">
+								<img src="img/parallx_img_1.png" alt="" />
+							</div>
+							<div class="parallx_img_part parallx_img_2">
+								<img src="img/parallx_img_2.png" alt="" />
+							</div>
+							<div class="parallx_img_part parallx_img_3">
+								<img src="img/parallx_img_3.png" alt="" />
+							</div>
+							<div class="parallx_img_part parallx_img_4">
+								<img src="img/parallx_img_4.png" alt="" />
+							</div>
+							<div class="parallx_img_part parallx_img_5">
+								<img src="img/parallx_img_5.png" alt="" />
+							</div>
+							<div class="parallx_img_part parallx_img_6">
+								<img src="img/parallx_img_6.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        <div>
-                            <div class="product_block">
-                                <a href="#" class="product_img d-inline-block">
-                                    <img class="img-block w-100" src="img/product-1.png" alt="" />
-                                </a>
-                                <div class="product_content">
-                                    <div class="start">
-                                        <ul>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5><a href="#" class="d-block">ULTRALIGHT COFFEE PRESS P0</a></h5>
-                                    <div class="price">
-                                        $44.95
-                                    </div>
-                                    <div class="product_color">
-                                        <ul>
+		<!-- End Parallx Images -->
 
-                                            <li>
-                                                <span style="background-color: #ffffff;border: 1px solid #DEDEDE;" class=""></span>
-                                            </li>
+		<!-- Ultimate Guide -->
 
-                                            <li>
-                                                <span style="background-color: #ffffff;"></span>
-                                            </li>
-                                            <li>
-                                                <span style="background-color: #000000;"></span>
-                                            </li>
-                                            <li>
-                                                <span style="background-color: #285C4D;"></span>
-                                            </li>
-                                            <li>
-                                                <span style="background-color: #02205C;"></span>
-                                            </li>
+		<section id="brew_guides" class="ultimate_section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-12" data-aos="fade-right">
+						<div class="title_section">
+							<h6>THE ULTIMATE BREW GUIDES</h6>
+							<h2>COFFEE TO WATER RATIOS: HOW TO MEASURE COFFEE LIKE A PRO</h2>
+							<p>
+								You can taste it when you’ve brewed with the perfect coffee to
+								water ratio. The acidity pops every so slightly, enhancing the
+								rich flavors and aromas. Your coffee’s mouthfeel is smooth and
+								satisfying. And the flavor is just strong enough that you can
+								sense all its nuances across your 10,000 taste buds, but not so
+								strong that it’s uncomfortable.
+							</p>
+							<p>
+								It’s an incredible experience—and too often, a hard one to come
+								by.
+							</p>
+							<a href="#" class="btn_main btn_border btn_radius mx-0"
+								>LEARN MORE</a
+							>
+						</div>
+					</div>
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+					<div class="col-md-6 col-12">
+						<div class="ultimate_img" data-aos="fade-left">
+							<div class="sticker">
+								<img src="img/sticker.svg" alt="sticker" />
+							</div>
+							<div class="fix_img">
+								<img
+									class="img-block w-100"
+									src="img/ultimate_img.png"
+									alt="THE ULTIMATE BREW GUIDES"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        <div>
-                            <div class="product_block">
-                                <a href="#" class="product_img d-inline-block">
-                                    <img class="img-block w-100" src="img/product-2.png" alt="" />
-                                </a>
-                                <div class="product_content">
-                                    <div class="start">
-                                        <ul>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                            <li>
-                                                <img src="img/start.svg" alt="" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h5><a href="#" class="d-block">COFFEE FRENCH PRESS P7</a></h5>
-                                    <div class="price">
-                                        $109.95 - $139.95 <span>$99.95</span>
-                                    </div>
-                                    <div class="product_color">
-                                        <ul>
-                                            <li>
-                                                <div class="bg_black"></div>
-                                            </li>
-                                            <li>
-                                                <div class="bg_black"></div>
-                                            </li>
-                                            <li>
-                                                <div class="bg_black"></div>
-                                            </li>
-                                            <li>
-                                                <div class="bg_black"></div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- End Ultimate Guide -->
 
-    <!-- End Product Slider -->
+		<!-- Footer -->
 
-    <!-- Parallx Images -->
+		<footer class="bg_blue_light">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-4 col-xl-5 col-12">
+							<div class="title_section ms-0" data-aos="zoom-in">
+								<h2>NEVER MISS A DROP.</h2>
+								<p>
+									Sign up to be the first to know about exclusive new deals,
+									product launches and more.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-8 col-xl-7 col-12">
+							<div class="newsletter_form" data-aos="zoom-in">
+								<form action="#">
+									<input
+										type="text"
+										placeholder="Enter your email address"
+										class="form_text"
+									/>
+									<input type="submit" value="SIGN UP" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xl-4 col-12">
+							<div class="footer_block" data-aos="zoom-out">
+								<div class="logo">
+									<a href="index.html" class="d-inline-block"
+										><img src="img/logo-fluid.svg" alt=""
+									/></a>
+								</div>
+								<div class="address">
+									<h5>We’re here to help.</h5>
+									<p><a href="#"> service@fluid.com </a></p>
+									<p><a href="#"> 1.844.377.7622 </a></p>
+								</div>
+							</div>
+						</div>
 
-    <section id="our_story" class="parallax_img_section bg_grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title_section text-center mb-50" data-aos="fade-up">
-                        <h6>POUR YOUR BEST CUP WITH</h6>
-                        <h2>OUR BEST SELLERS</h2>
-                        <p>
-                            We understand coffee is a big part of your busy, active life. That’s why we create and develop products that allow you to bring your passion for
-                            <strong>coffee-when you want it-</strong> and wherever life takes you.
-                        </p>
-                    </div>
+						<div class="col-md-9 col-xl-8 col-12">
+							<div class="row">
+								<div class="col-md-3 col-sm-6 col-12">
+									<div
+										class="footer_block"
+										data-aos="fade-up"
+										data-aos-delay="100"
+									>
+										<h5>Learn</h5>
+										<ul>
+											<li>
+												<a href="#">Blog </a>
+											</li>
+											<li>
+												<a href="#">Our Story </a>
+											</li>
+											<li>
+												<a href="#">Brew Guides</a>
+											</li>
+											<li>
+												<a href="#"> Retailers</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-12">
+									<div
+										class="footer_block"
+										data-aos="fade-up"
+										data-aos-delay="200"
+									>
+										<h5>SUPPORT</h5>
+										<ul>
+											<li>
+												<a href="#">FAQ </a>
+											</li>
+											<li>
+												<a href="#">Shipping & Returns</a>
+											</li>
+											<li>
+												<a href="#"> Our Guarantee</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-12">
+									<div
+										class="footer_block"
+										data-aos="fade-up"
+										data-aos-delay="300"
+									>
+										<h5>COMPANY</h5>
+										<ul>
+											<li>
+												<a href="#">Contact </a>
+											</li>
+											<li>
+												<a href="#">Join Us </a>
+											</li>
+											<li>
+												<a href="#">Press</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-12">
+									<div
+										class="footer_block social_media"
+										data-aos="fade-up"
+										data-aos-delay="400"
+									>
+										<h5>CONNECT WITH US</h5>
+										<ul>
+											<li>
+												<a href="#"
+													><img src="img/facebook.svg" alt="facebook"
+												/></a>
+											</li>
+											<li>
+												<a href="#"
+													><img src="img/instagram.svg" alt="instagram"
+												/></a>
+											</li>
+											<li>
+												<a href="#"
+													><img src="img/twitter.svg" alt="twitter"
+												/></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="last_footer">
+				<div class="container">
+					<div class="row align-items-center">
+						<div
+							class="col-12 d-flex flex-wrap align-items-center flex-column flex-md-row justify-md-content-between justify-content-center"
+						>
+							<p>Copyright © 2021 fluid Inc.</p>
+							<ul>
+								<li>
+									<a href="#"> Terms & Privacy </a>
+								</li>
+								<li>
+									<a href="#">Patents</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-                    <div class="parallx_img_grp">
-                        <div class="parallx_img_part parallx_img_1">
-                            <img src="img/parallx_img_1.png" alt="" />
-                        </div>
-                        <div class="parallx_img_part parallx_img_2">
-                            <img src="img/parallx_img_2.png" alt="" />
-                        </div>
-                        <div class="parallx_img_part parallx_img_3">
-                            <img src="img/parallx_img_3.png" alt="" />
-                        </div>
-                        <div class="parallx_img_part parallx_img_4">
-                            <img src="img/parallx_img_4.png" alt="" />
-                        </div>
-                        <div class="parallx_img_part parallx_img_5">
-                            <img src="img/parallx_img_5.png" alt="" />
-                        </div>
-                        <div class="parallx_img_part parallx_img_6">
-                            <img src="img/parallx_img_6.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- End Footer -->
 
-    <!-- End Parallx Images -->
+		<script src="js/jquery-3.6.1.min.js"></script>
 
-    <!-- Ultimate Guide -->
+		<!-- Bootstrap js bundle -->
+		<script src="js/bootstrap.min.js"></script>
 
-    <section id="brew_guides" class="ultimate_section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-12" data-aos="fade-right">
-                    <div class="title_section">
-                        <h6>THE ULTIMATE BREW GUIDES</h6>
-                        <h2>COFFEE TO WATER RATIOS: HOW TO MEASURE COFFEE LIKE A PRO</h2>
-                        <p>
-                            You can taste it when you’ve brewed with the perfect coffee to water ratio. The acidity pops every so slightly, enhancing the rich flavors and aromas. Your coffee’s mouthfeel is smooth and satisfying. And the flavor is just strong enough that you can
-                            sense all its nuances across your 10,000 taste buds, but not so strong that it’s uncomfortable.
-                        </p>
-                        <p>
-                            It’s an incredible experience—and too often, a hard one to come by.
-                        </p>
-                        <a href="#" class="btn_main btn_border btn_radius mx-0">LEARN MORE</a>
-                    </div>
-                </div>
+		<!-- slick js -->
+		<script type="text/javascript" src="js/slick.min.js"></script>
 
-                <div class="col-md-6 col-12">
-                    <div class="ultimate_img" data-aos="fade-left">
-                        <div class="sticker">
-                            <img src="img/sticker.svg" alt="sticker" />
-                        </div>
-                        <div class="fix_img">
-                            <img class="img-block w-100" src="img/ultimate_img.png" alt="THE ULTIMATE BREW GUIDES" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- aos js -->
+		<script src="js/aos.js"></script>
 
-    <!-- End Ultimate Guide -->
-
-    <!-- Footer -->
-
-    <footer class="bg_blue_light">
-        <div class="top-footer ">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4 col-xl-5 col-12">
-                        <div class="title_section ms-0" data-aos="zoom-in">
-                            <h2>NEVER MISS A DROP.</h2>
-                            <p>
-                                Sign up to be the first to know about exclusive new deals, product launches and more.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-xl-7 col-12">
-                        <div class="newsletter_form" data-aos="zoom-in">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email address" class="form_text" />
-                                <input type="submit" value="SIGN UP" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main_footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-xl-4 col-12">
-                        <div class="footer_block" data-aos="zoom-out">
-                            <div class="logo">
-                                <a href="index.html" class="d-inline-block"><img src="img/logo-fluid.svg" alt="" /></a>
-                            </div>
-                            <div class="address">
-                                <h5>We’re here to help.</h5>
-                                <p><a href="#"> service@fluid.com </a></p>
-                                <p><a href="#"> 1.844.377.7622 </a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-9 col-xl-8 col-12">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 col-12">
-                                <div class="footer_block" data-aos="fade-up" data-aos-delay="100">
-                                    <h5>Learn</h5>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Blog </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Our Story </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Brew Guides</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> Retailers</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-12">
-                                <div class="footer_block" data-aos="fade-up" data-aos-delay="200">
-                                    <h5>SUPPORT</h5>
-                                    <ul>
-                                        <li>
-                                            <a href="#">FAQ </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Shipping & Returns</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> Our Guarantee</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-12">
-                                <div class="footer_block" data-aos="fade-up" data-aos-delay="300">
-                                    <h5>COMPANY</h5>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Contact </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Join Us </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Press</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-12">
-                                <div class="footer_block social_media" data-aos="fade-up" data-aos-delay="400">
-                                    <h5>CONNECT WITH US</h5>
-                                    <ul>
-                                        <li>
-                                            <a href="#"><img src="img/facebook.svg" alt="facebook" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/instagram.svg" alt="instagram" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="img/twitter.svg" alt="twitter" /></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="last_footer">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 d-flex flex-wrap align-items-center flex-column flex-md-row justify-md-content-between justify-content-center">
-                        <p>Copyright © 2021 fluid Inc.</p>
-                        <ul>
-                            <li>
-                                <a href="#"> Terms & Privacy </a>
-                            </li>
-                            <li>
-                                <a href="#">Patents</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- End Footer -->
-
-
-    <script src="js/jquery-3.6.1.min.js"></script>
-
-    <!-- Bootstrap js bundle -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- slick js -->
-    <script type="text/javascript" src="js/slick.min.js"></script>
-
-    <!-- aos js -->
-    <script src="js/aos.js"></script>
-
-    <!-- custom js -->
-    <script type="text/javascript" src="js/custom.js"></script>
-</body>
-
+		<!-- custom js -->
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
 </html>
